@@ -12,7 +12,8 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 
 ## Available modules
 
-| Module                                              | Summary                        |
-| --------------------------------------------------- | ------------------------------ |
-| [partner_secondary_name](partner_secondary_name/)   | Add secondary name to partner. |
-| [partner_secondary_email](partner_secondary_email/) | Add secondary email to partner. |
+| Module                                              | Summary                            |
+| --------------------------------------------------- | ---------------------------------- |
+| [partner_secondary_name](partner_secondary_name/)   | Add secondary name to partner.     |
+| [partner_secondary_email](partner_secondary_email/) | Add secondary email to partner.    |
+| [partner_ref_sequence](partner_ref_sequence/)       | Create a sequence for partner ref. |
