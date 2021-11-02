@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_partner_form_hide_address_field" model="ir.ui.view">
+        <field name="name">view_partner_form_hide_address_field</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="ref" position="after">
+                <field name="hide_address" widget="boolean_toggle"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
