@@ -1,5 +1,5 @@
 {
-    'name': "Partner Contact Department",
+    'name': "Partner Contact Department Note",
 
     'summary': """
         Set departments on contacts.

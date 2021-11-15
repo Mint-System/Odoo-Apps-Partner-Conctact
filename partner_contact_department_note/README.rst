@@ -2,9 +2,9 @@
     :target: http://www.gnu.org/licenses/gpl-3.0-standalone.html
     :alt: License: GPL-3
 
-==========================
-Partner Contact Department
-==========================
+===============================
+Partner Contact Department Note
+===============================
 
 Set departments on contacts.
 
