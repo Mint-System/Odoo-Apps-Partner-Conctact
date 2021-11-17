@@ -6,21 +6,12 @@
 Partner Contact Location in Name
 ================================
 
-Zip and city in display name of contacts.
+Show zip and city in partner name.
 
 .. image:: ./static/description/icon.png
   :height: 100
   :width: 100
   :alt: Icon
-
-Usage
-~~~~~
-
-Clone module into Odoo addon directory.
-
-.. code-block:: bash
-
-    git clone git@github.com:mint-system/odoo-app-partner-contact-location-in-name.git ./addons/partner_contact_location_in_name
 
 Configuration
 ~~~~~~~~~~~~~

@@ -7,16 +7,18 @@ class Partner(models.Model):
     _inherit = "res.partner"
 
     def name_get(self):
-        _logger.warning(self)
+        res = []
         # Append zip and city if context is given
         if self.env.context.get('show_zip_and_city'):
-            recs = super(Partner, self).name_get()
-            _logger.warning(recs)
-            for rec in recs:
-                if rec.zip:
-                    rec.name += ', ' + rec.zip
-                if rec.city:
-                    rec.name += ' ' + rec.city
+            
+            for partner in self:
+                _logger.warning(partner)
+                name = partner.display_name
+                if partner.zip:
+                    name += ', ' + partner.zip
+                if partner.city:
+                    name += ' ' + partner.city
+                res.append((partner.id, name))
         else:
-            result = super(Partner, self).name_get()
-        return result
+            res = super(Partner, self).name_get()
+        return res

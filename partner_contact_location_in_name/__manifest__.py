@@ -2,16 +2,16 @@
     'name': "Partner Contact Location in Name",
 
     'summary': """
-        Zip and city in display name of contacts.
+        Show zip and city in partner name.
     """,
     
     'author': 'Mint System GmbH, Odoo Community Association (OCA)',
     'website': 'https://www.mint-system.ch',
-    'category': 'Base',
-    'version': '14.0.0.0.0',
+    'category': 'Sale',
+    'version': '14.0.1.0.0',
     'license': 'AGPL-3',
     
-    'depends': ['base'],
+    'depends': ['sale_management'],
 
     'data': [
         'views/res_partner_view.xml',
