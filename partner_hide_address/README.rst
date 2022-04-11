@@ -6,7 +6,7 @@
 Partner Hide Address
 ====================
 
-Option to hide address on reports. 
+Option to hide address on reports.
 
 For a detailed documentation have a look at https://www.odoo-wiki.org/.
 
