@@ -7,3 +7,9 @@ class ResPartner(models.Model):
     type = fields.Selection(selection_add=[
         ('order', 'Order Address')
     ], ondelete={'contact': 'set default'})
+
+    def get_address_default_type(self):
+        """Add new order type"""
+        res = super().get_address_default_type()
+        res.add("order")
+        return res
