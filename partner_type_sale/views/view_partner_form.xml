@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="partner_type_sale" model="ir.ui.view">
+        <field name="name">view_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('o_kanban_image')]/t/img[1]" position="after">
+                <img alt="Order" t-if="record.type.raw_value === 'sale'" t-att-src='_s + "/partner_type_sale/static/img/sale.jpg"'/>
+            </xpath>
+            <xpath expr="//div[hasclass('o_kanban_image')]/t/t" position="replace">
+                <t t-if="record.type.raw_value !== 'invoice' &amp;&amp; record.type.raw_value !== 'delivery'  &amp;&amp; record.type.raw_value !== 'order' &amp;&amp; record.type.raw_value !== 'sale'">
+                    <img alt="Logo" t-if="record.is_company.raw_value === true" t-att-src='_s + "/base/static/img/company_image.png"'/>
+                    <img alt="Avatar" t-if="record.is_company.raw_value === false" t-att-src='_s + "/base/static/img/avatar_grey.png"'/>
+                </t>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
