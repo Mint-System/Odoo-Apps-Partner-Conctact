@@ -15,8 +15,6 @@
                     <img alt="Avatar" t-if="record.is_company.raw_value === false" t-att-src='_s + "/base/static/img/avatar_grey.png"'/>
                 </t>
             </xpath>
-
-
         </field>
     </record>
 
