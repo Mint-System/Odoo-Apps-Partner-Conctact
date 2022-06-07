@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="base.view_partner_form" />
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('o_kanban_image')]/t/img[1]" position="after">
-                <img alt="Order" t-if="record.type.raw_value === 'sale'" t-att-src='_s + "/partner_type_sale/static/img/sale.jpg"'/>
+                <img alt="Order" t-if="record.type.raw_value === 'sale'" t-att-src='_s + "/partner_type_sale/static/img/sale.png"'/>
             </xpath>
             <xpath expr="//div[hasclass('o_kanban_image')]/t/t" position="replace">
                 <t t-if="record.type.raw_value !== 'invoice' &amp;&amp; record.type.raw_value !== 'delivery'  &amp;&amp; record.type.raw_value !== 'order' &amp;&amp; record.type.raw_value !== 'sale'">
