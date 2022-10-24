@@ -16,6 +16,7 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | --- | --- |
 | [partner_contact_department_note](partner_contact_department_note) |         Set departments on contacts. |
 | [partner_contact_location_in_name](partner_contact_location_in_name) |         Show zip and city in partner name. |
+| [partner_duplicate_acc_number](partner_duplicate_acc_number) |         Allow duplicate account numbers for partners. |
 | [partner_hide_address](partner_hide_address) |         Option to hide address on reports. |
 | [partner_ref_sequence](partner_ref_sequence) |         Create a sequence for partner ref. |
 | [partner_secondary_email](partner_secondary_email) |         Add secondary email to partner. |
