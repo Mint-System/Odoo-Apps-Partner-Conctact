@@ -12,7 +12,6 @@ class Partner(models.Model):
         if self.env.context.get('show_zip_and_city'):
             
             for partner in self:
-                _logger.warning(partner)
                 name = partner.display_name
                 if partner.zip:
                     name += ', ' + partner.zip
