@@ -1,7 +1,7 @@
 {
-    "name": "Partner Type Sale",
+    "name": "Partner Type Order",
     "summary": """
-        Adds new partner type sale contact address.
+        Adds new partner type order address.
     """,
     "author": "Mint System GmbH, Odoo Community Association (OCA)",
     "website": "https://www.mint-system.ch",
