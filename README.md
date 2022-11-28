@@ -14,4 +14,5 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 
 | Module | Summary |
 | --- | --- |
+| [partner_type_order](partner_type_order) |         Adds new partner type order address. |
 | [partner_type_sale](partner_type_sale) |         Adds new partner type sale contact address. |
