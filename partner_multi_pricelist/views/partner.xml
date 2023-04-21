@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_partner_property_form" model="ir.ui.view">
+    <field name="name">partner_multi_pricelist.view_partner_property_form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="product.view_partner_property_form" />
+    <field name="arch" type="xml">
+      <xpath expr="//group[@name='sale']" position="after">
+        <group string="Partner Pricelists" name="partner_pricelists"
+          groups="product.group_product_pricelist">
+          <field name="partner_pricelist_ids" nolabel="1">
+            <tree editable="bottom">
+              <field name="sequence" widget="handle" />
+              <field name="pricelist_id" />
+              <field name="date_start" />
+              <field name="date_end" />
+            </tree>
+          </field>
+        </group>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>

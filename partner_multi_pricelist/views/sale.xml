@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_tree" model="ir.ui.view">
+    <field name="name">partner_multi_pricelist.view_tree</field>
+    <field name="model">partner.pricelist</field>
+    <field name="arch" type="xml">
+      <tree editable="bottom">
+        <field name="sequence" widget="handle" />
+        <field name="partner_id" />
+        <field name="pricelist_id" />
+        <field name="date_start" />
+        <field name="date_end" />
+      </tree>
+    </field>
+  </record>
+
+  <record id="open_view_tree" model="ir.actions.act_window">
+    <field name="name">Partner Pricelists</field>
+    <field name="res_model">partner.pricelist</field>
+    <field name="view_mode">tree</field>
+  </record>
+
+  <menuitem name="Partner Pricelists" id="partner_multi_pricelist.menu" sequence="4"
+    parent="sale.product_menu_catalog" action="partner_multi_pricelist.open_view_tree" />
+
+</odoo>

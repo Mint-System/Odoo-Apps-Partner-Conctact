@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_multi_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-21 11:07+0000\n"
+"PO-Revision-Date: 2023-04-21 11:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_multi_pricelist
+#: model:ir.model,name:partner_multi_pricelist.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__partner_id
+msgid "Customer"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__display_name
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__date_end
+msgid "End Date"
+msgstr "Enddatum"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__id
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist____last_update
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: partner_multi_pricelist
+#: model:ir.model,name:partner_multi_pricelist.model_partner_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_res_partner__partner_pricelist_ids
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_res_users__partner_pricelist_ids
+msgid "Partner Pricelist"
+msgstr "Partner-Preisliste"
+
+#. module: partner_multi_pricelist
+#: model:ir.actions.act_window,name:partner_multi_pricelist.open_view_tree
+#: model:ir.ui.menu,name:partner_multi_pricelist.menu
+#: model_terms:ir.ui.view,arch_db:partner_multi_pricelist.view_partner_property_form
+msgid "Partner Pricelists"
+msgstr "Partner-Preislisten"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__pricelist_id
+msgid "Pricelist"
+msgstr "Preisliste"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__sequence
+msgid "Sequence"
+msgstr "Sequenz"
+
+#. module: partner_multi_pricelist
+#: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__date_start
+msgid "Start Date"
+msgstr "Startdatum"

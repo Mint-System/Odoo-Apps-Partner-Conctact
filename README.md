@@ -18,6 +18,7 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | [partner_contact_location_in_name](partner_contact_location_in_name) |         Show zip and city in partner name. |
 | [partner_duplicate_acc_number](partner_duplicate_acc_number) |         Allow duplicate account numbers for partners. |
 | [partner_hide_address](partner_hide_address) |         Option to hide address on reports. |
+| [partner_multi_pricelist](partner_multi_pricelist) |         Assign mutliple pricelists with start and end date to customers. |
 | [partner_ref_sequence](partner_ref_sequence) |         Create a sequence for partner ref. |
 | [partner_secondary_email](partner_secondary_email) |         Add secondary email to partner. |
 | [partner_secondary_name](partner_secondary_name) |         Add secondary name to partner. |
