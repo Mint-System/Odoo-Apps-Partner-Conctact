@@ -33,7 +33,7 @@ msgstr ""
 #. module: partner_multi_pricelist
 #: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__partner_id
 msgid "Customer"
-msgstr ""
+msgstr "Kunde"
 
 #. module: partner_multi_pricelist
 #: model:ir.model.fields,field_description:partner_multi_pricelist.field_partner_pricelist__display_name
