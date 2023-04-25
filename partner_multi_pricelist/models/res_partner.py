@@ -13,7 +13,10 @@ class Partner(models.Model):
         """Filter partner pricelists by sequence and date."""
         super()._compute_product_pricelist()
 
+        # Read filter date from context
         date = self._context.get('date') or fields.Datetime.now()
+        # _logger.warning(['_compute_product_pricelist', date])
+        
         for partner in self:
             pricelist_ids = partner.partner_pricelist_ids
 
