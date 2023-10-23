@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
     <record id="partner_type_sale" model="ir.ui.view">
@@ -9,7 +9,9 @@
         <field name="arch" type="xml">
 
             <xpath expr="//span[@name='address_name']" position="inside">
-                <b attrs="{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'sale')]}">Sale Contact Address</b>
+                <b
+                    attrs="{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'sale')]}"
+                >Sale Contact Address</b>
             </xpath>
 
         </field>

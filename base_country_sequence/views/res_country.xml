@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_country_tree" model="ir.ui.view">
+        <field name="name">base_country_sequence.view_country_tree</field>
+        <field name="model">res.country</field>
+        <field name="inherit_id" ref="base.view_country_tree" />
+        <field name="arch" type="xml">
+            <field name="name" position="before">
+                <field name="sequence" widget="handle" readonly="1" />
+            </field>
+        </field>
+    </record>
+
+    <record id="view_country_form" model="ir.ui.view">
+        <field name="name">base_country_sequence.view_country_form</field>
+        <field name="model">res.country</field>
+        <field name="inherit_id" ref="base.view_country_form" />
+        <field name="arch" type="xml">
+            <field name="code" position="after">
+                <field name="sequence" />
+            </field>
+        </field>
+    </record>
+
+    <record id="model_res_country_action_reset_sequence" model="ir.actions.server">
+        <field name="name">Reset sequence</field>
+        <field name="model_id" ref="base.model_res_country" />
+        <field name="binding_model_id" ref="base.model_res_country" />
+        <field name="binding_view_types">tree</field>
+        <field name="state">code</field>
+        <field name="code">model.reset_sequence()</field>
+      </record>
+
+</odoo>
