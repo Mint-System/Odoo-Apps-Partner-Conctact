@@ -17,5 +17,5 @@ class Country(models.Model):
         countries_sorted = countries.sorted("name")
         sequence = 1
         for country in countries_sorted:
-            country.write({'sequence': sequence})
+            country.write({"sequence": sequence})
             sequence += 1
