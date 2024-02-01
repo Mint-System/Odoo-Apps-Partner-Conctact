@@ -1,0 +1,2 @@
+name, model_id, groups, domain_force
+res_partner_rule_readonly_group, base.model_res_partner, group_partner_readonly, [('type', '=', 'private')]
