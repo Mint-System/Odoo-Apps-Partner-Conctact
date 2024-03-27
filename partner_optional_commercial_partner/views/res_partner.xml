@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="partner_type_sale" model="ir.ui.view">
+        <field name="name">partner_optional_commercial_partner.view_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <field name="ref" position="after">
+                <field name="is_commercial_partner" />
+            </field>
+        </field>
+    </record>
+
+</odoo>
