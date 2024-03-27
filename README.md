@@ -20,4 +20,5 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | [partner_optional_commercial_partner](partner_optional_commercial_partner) |         Option to set contact itself as commercial partner. |
 | [partner_readonly_access](partner_readonly_access) |         Extra group to set contact access to readonly. |
 | [partner_type_membership](partner_type_membership) |         Adds new partner type membership contact address. |
+| [partner_type_order](partner_type_order) |         Adds new partner type order address. |
 | [partner_type_sale](partner_type_sale) |         Adds new partner type sale contact address. |
