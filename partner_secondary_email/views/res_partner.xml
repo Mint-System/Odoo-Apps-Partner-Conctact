@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_simple_form_secondary_email" model="ir.ui.view">
+        <field name="name">Add secondary email on partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_simple_form" />
+        <field name="arch" type="xml">
+            <field name="email" position="after">
+                <field name="email2" widget="email" context="{'gravatar_image': True}"/>
+            </field>
+        </field>
+    </record>
+    <record id="view_partner_form_secondary_email" model="ir.ui.view">
+        <field name="name">Add secondary email on partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <field name="website" position="before">
+                <field name="email2" widget="email" context="{'gravatar_image': True}"/>
+            </field>
+        </field>
+    </record>
+</odoo>
