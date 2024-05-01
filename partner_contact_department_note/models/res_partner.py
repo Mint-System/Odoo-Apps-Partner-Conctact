@@ -5,4 +5,4 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    department = fields.Char()
+    department = fields.Char(string="Department")
