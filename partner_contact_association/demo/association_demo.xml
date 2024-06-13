@@ -1,0 +1,11 @@
+<odoo>
+
+  <record id="association0" model="res.association">
+    <field name="name">Odoo Community Associaion</field>
+  </record>
+
+  <record id="base.partner_demo_portal" model="res.partner">
+    <field name="association_id" ref="partner_contact_association.association0" />
+</record>
+
+</odoo>

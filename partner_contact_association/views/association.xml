@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_form" model="ir.ui.view">
+        <field name="name">partner_contact_association.view_form</field>
+        <field name="model">res.association</field>
+        <field name="arch" type="xml">
+            <sheet>
+                <form>
+                    <h1>
+                        <field name="name" />
+                    </h1>
+                </form>
+            </sheet>
+        </field>
+    </record>
+
+    <record id="view_tree" model="ir.ui.view">
+        <field name="name">partner_contact_association.view_tree</field>
+        <field name="model">res.association</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_view_tree" model="ir.actions.act_window">
+        <field name="name">Associations</field>
+        <field name="res_model">res.association</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        name="Associations"
+        id="partner_contact_association.menu_association"
+        parent="contacts.res_partner_menu_config"
+        action="partner_contact_association.action_view_tree"
+    />
+
+</odoo>
