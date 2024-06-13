@@ -5,13 +5,13 @@
         <field name="name">partner_contact_association.view_form</field>
         <field name="model">res.association</field>
         <field name="arch" type="xml">
-            <sheet>
-                <form>
+            <form>
+                <sheet>
                     <h1>
                         <field name="name" />
                     </h1>
-                </form>
-            </sheet>
+                </sheet>
+            </form>
         </field>
     </record>
 
