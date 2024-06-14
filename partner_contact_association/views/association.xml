@@ -7,6 +7,20 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <div name="button_box" position="inside">
+                        <button
+                            name="action_view_members"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-users"
+                        >
+                            <field
+                                name="member_count"
+                                string="Members"
+                                widget="statinfo"
+                            />
+                        </button>
+                    </div>
                     <h1>
                         <field name="name" />
                     </h1>
