@@ -8,7 +8,11 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='parent_id']/.." position="before">
                 <div class="o_row">
-                    <field name="association_id" placeholder="Association Name..." attrs="{'invisible': [('is_company','=', True)]}" />
+                    <field
+                        name="association_id"
+                        placeholder="Association Name..."
+                        attrs="{'invisible': [('is_company','=', True)]}"
+                    />
                 </div>
             </xpath>
         </field>
@@ -21,10 +25,24 @@
         <field name="arch" type="xml">
             <xpath expr="//t[@t-if='object.name']" position="before">
                 <t t-if="object.association_id">
-                    <span itemprop="addressAssocation" t-esc="object.association_id.name"/><br />
+                    <span
+                        itemprop="addressAssocation"
+                        t-esc="object.association_id.name"
+                    /><br />
                 </t>
             </xpath>
         </field>
     </record>
-    
+
+    <record id="view_res_partner_filter" model="ir.ui.view">
+        <field name="name">partner_contact_association.view_res_partner_filter</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <field name="parent_id" position="after">
+                <field name="association_name" filter_domain="[('association_name', 'ilike', self)]"/>
+            </field>
+        </field>
+    </record>
+
 </odoo>
