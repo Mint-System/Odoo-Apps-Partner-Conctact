@@ -1,7 +1,7 @@
 <odoo>
 
   <record id="association0" model="res.association">
-    <field name="name">Odoo Community Associaion</field>
+    <field name="name">Odoo Community Association</field>
   </record>
 
   <record id="base.partner_demo_portal" model="res.partner">

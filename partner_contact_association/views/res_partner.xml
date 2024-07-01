@@ -18,7 +18,6 @@
         </field>
     </record>
 
-
     <record id="contact_name" model="ir.ui.view">
         <field name="name">partner_contact_association.contact_name</field>
         <field name="inherit_id" ref="base.contact_name" />

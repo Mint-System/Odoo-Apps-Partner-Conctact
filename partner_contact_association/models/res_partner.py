@@ -15,14 +15,14 @@ class Partner(models.Model):
         related="association_id.name", string="Assocation Name", store=True
     )
 
-    def _get_name(self):
-        """Show association name is displayname."""
-        partner = self
-        name = super(Partner, self)._get_name()
-        if partner.association_id:
-            name = "%s, %s" % (partner.association_id.name, name)
-        return name
-
+    def _compute_display_name(self):
+        super()._compute_display_name()
+        for rec in self:
+            if rec.association_id:
+                rec.display_name = "{} ({})".format(
+                    rec.name, rec.association_id.name
+                )
+    
     @api.model
     def name_search(self, name="", args=None, operator="ilike", limit=100):
         """Always search in association name."""
