@@ -38,12 +38,18 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_res_partner_filter" />
         <field name="arch" type="xml">
+
+            <field name="name" position="attributes">
+                <attribute name="filter_domain">['|', '|', '|', '|', '|', ('display_name', 'ilike', self), ('ref', '=', self), ('email', 'ilike', self), ('vat', 'ilike', self), ('company_registry', 'ilike', self), ('association_name', 'ilike', self)]</attribute>
+            </field>
+
             <field name="parent_id" position="after">
                 <field
                     name="association_name"
                     filter_domain="[('association_name', 'ilike', self)]"
                 />
             </field>
+
         </field>
     </record>
 

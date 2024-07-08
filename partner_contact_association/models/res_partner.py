@@ -9,6 +9,7 @@ from odoo.osv import expression
 
 class Partner(models.Model):
     _inherit = "res.partner"
+    _rec_names_search = ['display_name', 'email', 'ref', 'vat', 'company_registry', 'association_name']
 
     association_id = fields.Many2one("res.association")
     association_name = fields.Char(
@@ -22,12 +23,3 @@ class Partner(models.Model):
                 rec.display_name = "{} ({})".format(
                     rec.name, rec.association_id.name
                 )
-    
-    @api.model
-    def name_search(self, name="", args=None, operator="ilike", limit=100):
-        """Always search in association name."""
-        if args is None:
-            args = []
-        args = expression.OR([args, [("association_name", operator, name)]])
-        _logger.warning(args)
-        return super().name_search(name=name, args=args, operator=operator, limit=limit)
