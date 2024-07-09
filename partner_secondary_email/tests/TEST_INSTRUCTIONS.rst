@@ -1,0 +1,2 @@
+- Open Contacts app and create a new contact
+- Under the Email field, a new field Secondary Email is added, enter the secondary email
