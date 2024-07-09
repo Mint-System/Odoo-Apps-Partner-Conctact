@@ -1,0 +1,2 @@
+- Open Contacts app and create a new contact
+- In the Sales & Purchase tab of the contact, a reference number is automatically assigned
