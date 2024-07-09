@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_simple_form_secondary_name" model="ir.ui.view">
+        <field name="name">Add secondary name on partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_simple_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']/.." position="after">
+                <field
+                    name="name2"
+                    placeholder="Secondary Name..."
+                    attrs="{'invisible': [('is_company', '=', False)]}"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="view_partner_form_secondary_name" model="ir.ui.view">
+        <field name="name">Add secondary name on partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']/.." position="after">
+                <field
+                    name="name2"
+                    placeholder="Secondary Name..."
+                    attrs="{'invisible': [('is_company', '=', False)]}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

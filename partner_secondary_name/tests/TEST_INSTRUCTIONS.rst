@@ -1,0 +1,2 @@
+- Open Contacts app and create a new contact
+- Under the Display Name, a new field Secondary Name is added, where the secondary name for the contact can be set
