@@ -1,0 +1,2 @@
+- Open Contacts and any company's employee record
+- In the new Department field, set the respective department for the person
