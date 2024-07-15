@@ -6,7 +6,7 @@
 Base Location City
 ==================
 
-Location coodrinates for cities.
+Location coordinates for cities.
 
 For a detailed documentation have a look at https://www.odoo-wiki.org/base-location-city.html
 

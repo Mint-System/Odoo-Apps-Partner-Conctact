@@ -1,7 +1,7 @@
 {
     "name": "Base Location City",
     "summary": """
-        Location coodrinates for cities.
+        Location coordinates for cities.
     """,
     "author": "Mint System GmbH, Odoo Community Association (OCA)",
     "website": "https://www.mint-system.ch",
