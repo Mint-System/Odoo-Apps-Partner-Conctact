@@ -6,7 +6,7 @@
 Base Location City
 ==================
 
-Module summary.
+Location coodrinates for cities.
 
 For a detailed documentation have a look at https://www.odoo-wiki.org/base-location-city.html
 
