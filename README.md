@@ -15,7 +15,7 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | Module | Summary |
 | --- | --- |
 | [base_country_sequence](base_country_sequence) |         Add sequence field to country list. |
-| [base_location_city](base_location_city) |         Location coodrinates for cities. |
+| [base_location_city](base_location_city) |         Location coordinates for cities. |
 | [partner_contact_association](partner_contact_association) |         Manage associtaions and assign contacts. |
 | [partner_contact_department_note](partner_contact_department_note) |         Set departments on contacts. |
 | [partner_contact_location_in_name](partner_contact_location_in_name) |         Show zip and city in partner name. |
