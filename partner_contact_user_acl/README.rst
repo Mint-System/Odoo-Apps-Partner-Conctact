@@ -2,18 +2,18 @@
     :target: http://www.gnu.org/licenses/gpl-3.0-standalone.html
     :alt: License: GPL-3
 
-=======================
-Partner Readonly Access
-=======================
+========================
+Partner Contact User ACL
+========================
 
-Module summary.
+Restricted access to contacts app.
 
-For a detailed documentation have a look at https://www.odoo-wiki.org/partner-readonly-access.html
+For a detailed documentation have a look at https://www.odoo-wiki.org/partner-contact-user-acl.html
 
 Configuration
 ~~~~~~~~~~~~~
 
-* No additional configurations needed
+* Open group *Access-control list / Contacts Menu* and add users
 
 Maintainer
 ~~~~~~~~~~
