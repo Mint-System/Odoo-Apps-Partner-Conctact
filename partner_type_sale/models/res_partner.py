@@ -21,7 +21,7 @@ class ResPartner(models.Model):
 
     def _get_name(self):
         partner = self
-        name = super(ResPartner, self)._get_name()
+        name = super(self)._get_name()
         if partner.company_name or partner.parent_id:
             if not partner.name and partner.type in ["sale"]:
                 name += (

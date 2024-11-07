@@ -9,9 +9,7 @@
         <field name="arch" type="xml">
 
             <xpath expr="//span[@name='address_name']" position="inside">
-                <b
-                    attrs="{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'sale')]}"
-                >Sale Contact Address</b>
+                <b invisible="not parent_id or type != 'sale'">Sale Contact Address</b>
             </xpath>
 
         </field>
