@@ -1,0 +1,2 @@
+- In the Contacts app open Azure Interior contact
+- Under Contacts & Addresses tab add a new address "Order Address"
