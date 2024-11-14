@@ -20,6 +20,7 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | [partner_contact_department_note](partner_contact_department_note) |         Set departments on contacts. |
 | [partner_contact_location_in_name](partner_contact_location_in_name) |         Show zip and city in partner name. |
 | [partner_contact_user_acl](partner_contact_user_acl) |         Restricted access to contacts app. |
+| [partner_email_history](partner_email_history) |         Show history of emails sent and received to a partner. |
 | [partner_multiline_street2](partner_multiline_street2) |         Enable multiline text for secondary street. |
 | [partner_optional_commercial_partner](partner_optional_commercial_partner) |         Option to set contact itself as commercial partner. |
 | [partner_readonly_access](partner_readonly_access) |         Extra group to set contact access to readonly. |
