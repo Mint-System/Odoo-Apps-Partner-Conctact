@@ -10,14 +10,18 @@ class Parnter(models.Model):
     _inherit = "res.partner"
 
     def action_show_email_history(self):
-        action = self.env.ref("mail.action_view_mail_mail")
+        action = self.env.ref("mail.action_view_mail_message")
         result = action.read()[0]
-        domain = expression.OR(
+        subtype_id = self.env.ref("mail.mt_comment")
+        result["domain"] = expression.AND(
             [
-                [("email_from", "ilike", self.email)],
-                [("email_to", "=", self.email)],
-                [("recipient_ids", "=", self.email)],
+                [("subtype_id", "=", subtype_id.id)],
+                expression.OR(
+                    [
+                        [("email_from", "ilike", self.email)],
+                        [("partner_ids", "=", self.email)],
+                    ]
+                ),
             ]
         )
-        result["domain"] = domain
         return result

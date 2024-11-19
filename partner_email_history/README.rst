@@ -6,7 +6,7 @@
 Partner Email History
 =====================
 
-Module summary.
+Show history of emails sent and received to a partner.
 
 For a detailed documentation have a look at https://www.odoo-wiki.org/partner-email-history.html
 
