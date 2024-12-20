@@ -12,6 +12,7 @@
                     string="E-Mail History"
                     name="action_show_email_history"
                     icon="fa-inbox"
+                    attrs="{'invisible': [('email','=',False)]}"
                 />
             </xpath>
         </field>
