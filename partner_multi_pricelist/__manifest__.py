@@ -3,7 +3,7 @@
     "summary": """
         Assign mutliple pricelists with start and end date to customers.
     """,
-    "author": "Mint System GmbH, Odoo Community Association (OCA)",
+    "author": "Mint System GmbH",
     "website": "https://www.mint-system.ch",
     "category": "Sales",
     "version": "14.0.1.0.1",

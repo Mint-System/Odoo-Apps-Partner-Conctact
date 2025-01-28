@@ -3,7 +3,7 @@
     "summary": """
         Set departments on contacts.
     """,
-    "author": "Mint System GmbH, Odoo Community Association (OCA)",
+    "author": "Mint System GmbH",
     "website": "https://www.mint-system.ch",
     "category": "Customer Relationship Management",
     "version": "14.0.2.0.0",
